@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EECU Budget Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="start">
+            <h1>Let's calculate your budget and save financially!</h1>
+            <noscript>Turn on JavaScript to use this website.</noscript>
+            <img src="i/arrow.png" alt="Arrow" class="startarrow">
+        </section>
+        <section>
+            <div class="head">
+                <h2>What is your income?</h2>
+            </div>
+            <div class="sc">
+                <div class="es vi ao">
+                    <p>Enter your Salary (Yearly)</p>
+                    <form action="javascript:void(0)">
+                        <input type="number">
+                        <input type="submit">
+                    </form>
+                </div>
+                <div class="es ea vi vo">
+                    <div class="job">
+                        <p id="oc">o1</p>
+                        <p id="sl">s1</p>
+                        <p id="oc">o2</p>
+                        <p id="sl">s2</p>
+                        <p id="oc">o3</p>
+                        <p id="sl">s3</p>
+                        <p id="oc">o4</p>
+                        <p id="sl">s4</p>
+                        <p id="oc">o5</p>
+                        <p id="sl">s5</p>
+                        <p id="oc">o6</p>
+                        <p id="sl">s6</p>
+                    </div>
+                    <img src="i/arrow.png" alt="Arrow" id="eaa" onclick="ri()">
+                    <img src="i/arrow.png" alt="Arrow" id="eaaa" onclick="ril()" class="hi">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="head">
+                <h3>We'll do the calculation</h2>
+            </div>
+            <div class="co">
+                <div class="bo">
+                    <div class="bo-t">
+                        Taxes
+                    </div>
+                </div>
+                <div class="bo">
+                    <div class="bo-t">
+                        Calculated Budget Input
+                    </div>
+                </div>
+                <div class="bo">
+                    <div class="bo-t">
+                        Affordable House Payment
+                    </div>
+                </div>
+                <div class="bo">
+                    <div class="bo-t">
+                        Leftover Money Output
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="head">
+                <h4>Here is a visual representation on your budget in a <abbr title="50% to Needs - 30% to Wants - 20% to Retirement">50-30-20</abbr> form.</h2>
+            </div>
+            <div class="vi">
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
