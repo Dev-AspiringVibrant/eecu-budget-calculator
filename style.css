@@ -1,3 +1,7 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 html {
     scroll-snap-type: y mandatory;
 }
@@ -45,9 +49,7 @@ h1, h2, h3, h4 {
 }
 
 .co {
-    /* width: 800px; */
     height: 800px;
-    background-color: yellow;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,13 +57,14 @@ h1, h2, h3, h4 {
 }
 
 .bo {
-    background-color: gray;
+    background-color: rgb(238, 238, 238);
     display: flex;
     flex-direction: column;
-    height: 280px;
-    width: 280px;
-    margin-left: 6em;
-    margin-right: 6em;
+    height: 320px;
+    width: 320px;
+    margin-left: 4em;
+    margin-right: 4em;
+    border-radius: 1em;
 }
 
 .vi {
@@ -70,7 +73,7 @@ h1, h2, h3, h4 {
 }
 
 .es {
-    background-color: gray;
+    background-color: rgb(238, 238, 238);
     width: 380px;
     height: 380px;
     position: absolute;
@@ -78,6 +81,7 @@ h1, h2, h3, h4 {
 
 .ao {
     z-index: 1;
+    border-radius: 1em 0em 0em 1em;
 }
 
 .vo {
@@ -103,7 +107,8 @@ h1, h2, h3, h4 {
 .sc {
     position: relative;
     width: 800px;
-    height: 800px;
+    height: 700px;
+    margin-bottom: 100px;
     bottom: 14%;
 }
 
@@ -115,4 +120,16 @@ h1, h2, h3, h4 {
     cursor: pointer;
     align-self: center;
     transform: rotate(180deg);
+}
+
+.bo-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-y: auto;
+}
+
+.bo-lm, .bo-cv, .bo-rm {
+    display: flex;
+    flex-direction: column;
 }

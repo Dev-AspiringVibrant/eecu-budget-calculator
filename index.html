@@ -3,6 +3,7 @@
     <head>
         <title>EECU Budget Calculator</title>
         <link rel="stylesheet" href="style.css">
+        <script src="utils.js"></script>
     </head>
     <body>
         <section id="start">
@@ -51,27 +52,79 @@
                     <div class="bo-t">
                         Taxes
                     </div>
+                    <div class="bo-c">
+                        <div class="bo-lm">
+                            <p id="tm">$</p>
+                            <p id="tst">$</p>
+                            <p id="ft">$</p>
+                            <p id="ss">$</p>
+                            <p id="tmc">$</p>
+                            <p id="tsd">$</p>
+                            <p id="trm">$</p>
+                            <p id="thi">$</p>
+                            <p id="t-total-i">$</p>
+                        </div>
+                        <div class="bo-cv">
+                            <p id="tm-m">/12 (Month)</p>
+                            <p id="tst-m">*12% (State Tax)</p>
+                            <p id="ft-m">*7% (Federal Tax)</p>
+                            <p id="ss-m">*6.2% (Social Security)</p>
+                            <p id="tmc-m">*1.45% (Medicare)</p>
+                            <p id="tsd-m">*1% (State Disability)</p>
+                            <p id="trm-m">*5% (Retirement)</p>
+                            <p id="thi-m">$180 (Health Insurance)</p>
+                            <p id="t-total-m">Total</p>
+                        </div>
+                        <div class="bo-rm">
+                            <p id="tm-r">$</p>
+                            <p id="tst-r">$</p>
+                            <p id="ft-r">$</p>
+                            <p id="ss-r">$</p>
+                            <p id="tmc-r">$</p>
+                            <p id="tsd-r">$</p>
+                            <p id="trm-r">$</p>
+                            <p id="thi-r">$</p>
+                            <p id="t-total-o">$</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="bo">
                     <div class="bo-t">
                         Calculated Budget Input
+                    </div>
+                    <div class="bo-c">
+                        <p id="t-total-o">Total</p>
                     </div>
                 </div>
                 <div class="bo">
                     <div class="bo-t">
                         Affordable House Payment
                     </div>
+                    <div class="bo-c">
+                        <div class="bo-lm">
+                            <p id="h-l">$</p>
+                        </div>
+                        <div class="bo-cv">
+                            <p id="h-m">*33%</p>
+                        </div>
+                        <div class="bo-rm">
+                            <p id="h-r">$</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="bo">
                     <div class="bo-t">
                         Leftover Money Output
+                    </div>
+                    <div class="bo-c">
+                        <p id="h-r">Total</p>
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="head">
-                <h4>Here is a visual representation on your budget in a <abbr title="50% to Needs - 30% to Wants - 20% to Retirement">50-30-20</abbr> form.</h2>
+                <h4>Here is a visual representation on your budget <br/> in a <abbr title="50% to Needs - 30% to Wants - 20% to Retirement">50-30-20</abbr> form.</h2>
             </div>
             <div class="vi">
                 <canvas id="myChart"></canvas>
