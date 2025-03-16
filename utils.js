@@ -80,7 +80,7 @@ function buildList(jobs) {
     for (let job of jobs) {
 
         //start an HTML section for each job
-        html += '<section>';
+        html += '<div class="jobshow">';
 
         /* An alternative way of looping through each item in the data, not as useful for this assignment but something to keep in mind for a story? ... */
         //loop through each entry and create a div for each key:value pair
@@ -93,7 +93,8 @@ function buildList(jobs) {
         //create a div element for the salary and format it as currency
         html += `<div><strong>Salary</strong>: $${job.salary.toLocaleString('en-US')}</div>`;
         //close the section
-        html += '</section>';
+        html += `<hr/>`
+        html += '</div>';
     }
 
     //return the completed html

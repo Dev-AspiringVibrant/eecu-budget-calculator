@@ -4,6 +4,7 @@
 
 html {
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
 }
 
 body {
@@ -132,4 +133,9 @@ h1, h2, h3, h4 {
 .bo-lm, .bo-cv, .bo-rm {
     display: flex;
     flex-direction: column;
+}
+
+.jobshow {
+    text-align: left;
+    margin-bottom: 1em;
 }
